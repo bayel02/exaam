@@ -1,0 +1,209 @@
+/* Base config */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: none;
+  background: none;
+}
+ul {
+  margin-left: 0;
+  margin-right: 0;
+}
+li {
+  list-style-type: none;
+}
+/* Base config */
+/* Header */
+.header {
+  border-bottom: 2px solid #e6e6e6;
+}
+.header__burger {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  display: none;
+}
+.header__burger::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  top: -10px;
+  left: 0;
+  background-color: black;
+}
+.header__burger::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  background-color: black;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.header__menu {
+  padding: 37px 0 35px 0;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  margin-left: auto;
+}
+.nav__link {
+  margin: 30px;
+  transition: .6s;
+
+}
+.nav__link:hover{
+  color: rgb(182, 123, 14);
+  border-bottom: 1px solid rgb(182, 123, 14) ;
+  transition: .6s;
+}
+/* Header */
+/* Section */
+.section {
+  padding-top: 50px;
+}
+.section_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.section__right-card img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.left__card-subtitle {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+  margin-bottom: 14px;
+}
+.left__card-title {
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 18px;
+}
+.left__card-desc {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  margin-bottom: 22px;
+}
+.left__card-text {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+/* Section */
+
+/* Contry__cards */
+.contry__cards {
+  padding-top: 50px;
+}
+.grid__cards {
+  display: grid;
+  grid-template-areas:
+    "card1 card2 card3"
+    "card4 card5 card6";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 450px);
+  gap: 20px;
+}
+
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card4 {
+  grid-area: card4;
+}
+.card5 {
+  grid-area: card5;
+}
+.card6 {
+  grid-area: card6;
+}
+.item img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.grid__card-subtitle {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+  padding-top: 24px;
+}
+.grid__card-title {
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 18px;
+}
+.grid__card-desc {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 15px;
+}
+/* Contry__cards */

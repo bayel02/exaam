@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+  .container {
+    max-width: 644px;
+  }
+  .section_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .grid__cards {
+    display: grid;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 450px);
+    gap: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .container {
+    max-width: 370px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+  }
+  .grid__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
